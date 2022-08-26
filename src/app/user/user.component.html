@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-4" *ngFor="let user of users">
+            <div class="card" style="width: 18rem;">
+                <img [src]="user.avatar_url" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">{{user.login}}</h5>
+                  <p class="card-title">{{user.id}}</p>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary" [routerLink]="['/User',user.login]">View More</a>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
